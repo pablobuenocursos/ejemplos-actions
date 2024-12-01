@@ -15,7 +15,7 @@ jobs:
         run: echo "${{ steps.genera-valor.outputs.MI_VALOR }}"
       
       - name: Enmascarando valor
-        id: encascara
+        id: enmascara
         run: | 
           valor_secreto=claudia
           echo "::add-mask::$valor_secreto"
