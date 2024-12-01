@@ -11,7 +11,7 @@ jobs:
         uses: actions/checkout@v4.2.2
 
       - name: Configura variable de ambiente
-        run: echo 'Mi variable=hola mundo, Pablo' >> $GITHUB_ENV
+        run: echo 'MI_VARIABLE=hola mundo, Pablo' >> $GITHUB_ENV
 
       - name: Ejecuta archivo JS
         run: node main.js
