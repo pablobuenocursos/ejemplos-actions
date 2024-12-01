@@ -1,0 +1,17 @@
+name: Ejemplo matriz
+
+on: 
+  workflow_dispatch:
+
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false  # para que no se detengan los jobs si uno falla. Si falla uno el resto continuan
+      matrix:
+        sistema-operativo: [windows-latest, ubuntu-latest, macos-latest]
+    name: matriz uni-dimensional
+    runs-on: ${{ matrix.sistema_operativo }}
+    steps:
+      - name: imprimir SO
+        run: Echo "Estamos usando el sistema operativo $ {{ matrix.sistema_operativo }}
