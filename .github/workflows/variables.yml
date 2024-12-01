@@ -1,0 +1,20 @@
+name: Variables
+
+on:
+  workflow_dispatch:
+
+env:
+  variable_global: VARIABLE GLOBAL
+
+
+jobs:
+  job-1:
+    runs-on: ubuntu-latest
+    env:
+      variable_job: VARIABLE JOB
+    steps:
+      - name: step 1 del job-1
+        run: |
+          echo "El valor de la variable global es $variable_global
+          echo "Otra forma de escribir la variable es ${{ env.variable_global }}
+          echo "También podemos definir variables a nivel de job: ${{ env.variable_job }}
