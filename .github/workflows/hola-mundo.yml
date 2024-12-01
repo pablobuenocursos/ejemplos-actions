@@ -11,7 +11,7 @@ on:
       - main
     paths: 
       - 'codigo/**'
-      - '.github/workflows/hola-mundo-yml'
+      - '.github/workflows/hola-mundo.yml'
       
   pull_request:
     branches:
