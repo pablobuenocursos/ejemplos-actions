@@ -1,12 +1,14 @@
 name: hola mundo
 
 on: 
+  workflow_dispatch:  # para que se ejecute de forma manual
+  
   schedule: 
     - cron: "*/5 * * * *" # Se ejecuta cada 5 minutos
   
-  push:
-    branches:
-      - main
+  #push:
+   # branches:
+    #  - main
 
 jobs: 
   saludar:
