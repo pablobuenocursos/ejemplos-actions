@@ -14,4 +14,4 @@ jobs:
     runs-on: ${{ matrix.sistema_operativo }}
     steps:
       - name: imprimir SO
-        run: Echo "Estamos usando el sistema operativo $ {{ matrix.sistema_operativo }}
+        run: Echo "Estamos usando el sistema operativo $ {{ matrix.sistema_operativo }}"
